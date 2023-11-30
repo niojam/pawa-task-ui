@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+
+body {
+  color: $indigo-primary;
+  background: $gray-lightest;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, 'Segoe UI', Roboto, Cantarell, sans-serif;
+  font-size: $font-size-primary;
+}
+
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
+}
+
+.dashboard {
+  background-color: $white-soft;
+  border: 1px solid $primary-border;
+  min-height: 95vh;
+  margin-top: 1rem;
+  box-shadow: rgba(60, 60, 60, 0.29) 0 0 10px -5px;
+}
+
+@media (min-width: 868px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 870px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1070px;
+  }
+}
+
+.horizontal-rule {
+  border-top: 0.5px solid $primary-border;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+}
+
+h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
